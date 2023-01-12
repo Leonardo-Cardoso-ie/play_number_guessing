@@ -23,9 +23,15 @@ while chances >= 0:
     chances -= 1
     guess = int(input(f'Guess a number between {min_number} and {max_number}:')) # our min and max number run here
 # Tell us if we guessed to high or low
+    if guess > rand_number:
+        print('Too high!')
+    elif guess < rand_number:
+        print('Too low!')
 
 # Tell us if we are right or wrong
+    elif guess == rand_number:
+        print('You guessed correct') 
 
 # Prompt us if win or loose
 
-# Keep score and give us an option to retry
+# Keep score and give us an option to retry 
