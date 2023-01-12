@@ -1,12 +1,16 @@
+import random
+
 # Minimum number
 # Create a variable for a minimum number and insert input
-min_number = input('Please enter minimum number: ')
+min_number = int(input('Please enter minimum number: '))
  
 # Maximum number 
 # Create a variable for the maximum number and insert input
-max_number = input('Please enter maximum number: ')
+max_number = int(input('Please enter maximum number: '))
 
 # Random number to guess
+# Create a variable rand_number
+rand_number = random.randint(min_number, max_number)
 
 # NUmber of chances
 
